@@ -53,8 +53,11 @@ for x in repeats:
         print("greater", x, len(repeatDict[x]), len(geneDict[x]))
         geneDict[x]=repeatDict[x]
         print("greater", x, len(repeatDict[x]), len(geneDict[x]))
-    #elif len(repeatDict[x]) < len(geneDict[x]):
-      #  print("less", x, len(repeatDict[x]), len(geneDict[x]))
+    elif len(repeatDict[x]) < len(geneDict[x]):
+        print("less", x, len(repeatDict[x]), len(geneDict[x]))
+    else:
+        print(x, len(repeatDict[x]), len(geneDict[x]))
+
 
 for key in geneDict:
     newfile.write(key)
